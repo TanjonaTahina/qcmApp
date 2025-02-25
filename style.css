@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.main-container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.sidebar {
+    width: 80px;
+    overflow-y: auto;
+    height: 400px;
+    padding: 10px;
+    
+}
+
+.sidebar div {
+    background-color: #3498db;
+    color: white;
+    padding: 8px;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.question {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.options label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.options input[type="radio"]:checked + span {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: auto;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+.validate-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.correct {
+    background-color: green !important;
+}
+
+.incorrect {
+    background-color: red !important;
+}
+
+.unvalidated {
+    background-color: #3498db !important;
+}
+
+.active {
+    background-color: #2980b9 !important;
+}
+
+/* Uniformiser les boutons */
+.action-btn {
+    width: 120px;
+    height: 45px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    background: #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation hover */
+.action-btn:hover {
+    background: #03f7e2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Espacement amélioré */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+.correct {
+    background-color: green !important;
+    color: white;
+}
+
+.incorrect {
+    background-color: red !important;
+    color: white;
+}
+
+.unvalidated {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Style scrollbar */
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background: #dcdfe0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #3498db;
+    border-radius: 10px;
+}
